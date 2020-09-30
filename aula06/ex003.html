@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) // String convertido em Number
+        var n2 = Number(window.prompt('Digite outro número: ')) // String convertido em Number
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}.`) // Template String: ${} no meio da bagaça
+        // (number + number) para adição
+        // (string + string) para concatenação
+        // String(n) ou n.toString() converte de qualquer coisa para String
+        
+        //var s = 'JavaScript'
+        // s.lenght        // quantos caracteres a string tem
+        // s.toUpperCase() // tudo para 'MAIÚSCULAS'
+        // s.toLowerCase() // tudo para 'minúsculas'
+    </script>
+</body>
+</html>
