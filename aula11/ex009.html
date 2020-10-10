@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual País?</title>
+    <style>
+        h1 {
+            font: bold 24pt Arial;
+        }
+        body, p, div, input {
+            font: normal 14pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual País?</h1>
+    Digite seu país: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Informar" onclick="informar()">
+    <p>
+        <div id="res">
+
+        </div>
+    </p>
+    <script>
+        function informar() {
+            var p = window.document.getElementById('txtp')
+            var res = window.document.getElementById('res')
+            var pais = String(p.value) 
+            res.innerHTML = `O país informado é ${pais}`
+
+            if (pais == 'Brasil') { //Condição Composta
+                res.innerHTML += `<p>Você é <strong>Brasileiro</strong>.</p>`
+            } else {
+                res.innerHTML += `<p>Você é <strong>Estrangeiro</strong>.</p>`
+            }
+        }
+    </script>
+</body>
+</html>
