@@ -1,0 +1,46 @@
+body {
+    background: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    border-radius: 27px;
+    background: transparent;
+    box-shadow:  8px 8px 10px #1a1a1a,
+                -8px -8px 10px #9a9a9a;
+}
+
+section:hover {
+    box-shadow: inset 8px 8px 10px #1a1a1a,
+                inset -8px -8px 10px #9a9a9a;
+}
+
+section img {
+    border-radius: 50%;
+    box-shadow:  8px 8px 10px #1a1a1a,
+                -8px -8px 10px #9a9a9a;
+}
+section:hover img {
+    border-radius: 50%;
+    box-shadow: inset 8px 8px 10px #1a1a1a, 
+                inset -8px -8px 10px #9a9a9a;
+}
+
+div {
+    text-align: center;
+    padding: 5px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
