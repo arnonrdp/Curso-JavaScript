@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            columns: 2;
+            margin-left: 20px;
+        }
+        body h1 {
+            text-align: center;
+        }
+        body p {
+            font-size: 10pt;
+            font-weight: bold;
+            margin-bottom: auto;
+            list-style: unset;
+            text-decoration: overline;
+        }
+        img {
+            margin: 5px;
+            border-radius: 6px;
+        }
+        @media all and (max-width: 768px) {
+            body { columns: 1; }
+        }
+    </style>
+    <title>Notas</title>
+</head>
+<body>
+    <h1 style="font-family: Arial;">Anotações de Aula</h1>
+    <code>
+        <p>> Alerta com lacuna para escrever</p>
+        window.prompt('Qual é o seu nome?')<br/>
+        <br/>
+        <p>> Template String: ${} - Usado como forma de melhorar a concatenação</p>
+        window.alert('É um grande prazer em te conhecer, ' + nome + '!') // Concatenação<br/>
+        window.alert(`É um grande prazer em te conhecer, ${nome} !`) // Template String<br/>
+        <br/>
+        <p>> Template String: ${} // Usado como forma de melhorar a concatenação</p>
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}.`)<br/>
+        (number + number) para adição<br/>
+        (string + string) para concatenação<br/>
+        <br/>
+        <p>> Conversão de String para Number e vice-versa</p>
+        String(n) ou n.toString() converte de qualquer coisa para String<br/>
+        <br/>
+        var n1 = Number(window.prompt('Digite um número: '))<br/>
+        var n2 = Number(window.prompt('Digite outro número: '))<br/>
+        var s = n1 + n2<br/>
+        <br/>
+        <p>> Contagem e Alteração de Caracteres</p>
+        var s = 'JavaScript'<br/>
+        s.lenght // quantos caracteres a string tem<br/>
+        s.toUpperCase() // tudo para 'MAIÚSCULAS'<br/>
+        s.toLowerCase() // tudo para 'minúsculas'<br/>
+        <br/>
+        <p>> Alteração de Casas Decimais e Ponto e Vírgula</p>
+        var n1 = 1545.5<br/>
+        n1.toFixed(2) // Termina com 2 casas decimais: 1545.50<br/>
+        n1.toFixed(2).replace('.', ',') // Substitui o ponto por vírgula<br/>
+        <br/>
+        <p>> Estilo Monetário / Contabilidade</p>
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})<br/>
+        <br/>
+        <p>> Bizus de Aritmética</p>
+        <img src="img/aritmetica.png"> <img src="img/aritmetica-precedencia.png"> <br/>
+        <p>> Auto Referência Aritmética</p>
+        var num = 8<br/>
+        num = 8 + 2 // Agora num = 10<br/>
+        num += 2 // Obtém o mesmo resultado<br/>
+        num ++ // É o mesmo que +1<br/>
+        num -- // É o mesmo que -1<br/>
+        <p>> Operadores</p>
+        5 == 5 // true<br/>
+        5 == '5' // 5 é igual a 5? // true<br/>
+        5 === '5' // 5 é idêntico de 5? // false<br/>
+        === // Operador de Igualdade Restrita<br/>
+        <p>> Operadores Lógicos</p>
+        <img src="img/operadores-logicos.png"> <img src="img/operadores-precedencia.png"> <img src="img/operadores-ternario.png"><br/>
+        <p>Árvore DOM</p>
+        var teste
+        window.document.getElementsByTagName('teste')[0]<br/>
+        getElementsBy... TagName, ById, ClassName podem tranquilamente ser substituídos pelo: querySelector ou querySelectorAll<br/>
+        <p>Variáveis Compostas</p>
+        Cada <b>array</b> é uma variável que possui vários <b>elementos</b> que possuem <b>valor</b> e <b>chaves</b> de identificação.
+    </code>
+</body>
+</html>
